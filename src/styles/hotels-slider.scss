@@ -1,0 +1,409 @@
+$white: #ffffff;
+$grey: #cccccc;
+$orange: #FE6306;
+$dark-blue: #375F90;
+$half-black: rgba(0, 0, 0, .4);
+$light-grey: #F5F5F5;
+$black: #000000;
+$dark-orange: #D86200;
+$light-orange: #ffe0cd;
+
+
+$mobile: 320px;
+$big-mobile: 640px;
+$tablet: 960px;
+$full-width: 1280px;
+
+
+#hotels-slider-container {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  margin: 80px auto;
+
+  .slider {
+    width: 300px;
+    margin: 0 auto;
+
+    .slide {
+      position: relative;
+      .slide-img {
+        position: absolute;
+        width: 200px;
+        height: 300px;
+        background-position: center center;
+        background-size: cover;
+        overflow: hidden;
+        z-index: 100;
+
+        transition: opacity .8s linear;
+
+        .white-border {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 60px;
+          left: 60px;
+          border: 3px solid $white;
+        }
+      }
+
+      .orange-border {
+        position: absolute;
+        width: 250px;
+        height: 250px;
+        top: 60px;
+        left: 60px;
+        border: 3px solid $orange;
+        z-index: 0;
+      }
+    }
+
+    .slide-img-1 {
+      background-image: url('../images/hotels-slide-1.jpg');
+    }
+    .slide-img-2 {
+      background-image: url('../images/hotels-slide-2.jpg');
+    }
+    .slide-img-3 {
+      background-image: url('../images/hotels-slide-3.jpg');
+    }
+    .slide-img-4 {
+      background-image: url('../images/hotels-slide-4.jpg');
+    }
+    .slide-img-5 {
+      background-image: url('../images/hotels-slide-5.jpg');
+    }
+
+
+    .hotels-header {
+      position: absolute;
+      top: 150px;
+      left: 205px;
+      color: $black;
+      text-transform: uppercase;
+      font-weight: 700;
+
+      .small {
+        font-size: 16px;
+        font-weight: 300;
+      }
+
+      .orange-tick {
+        width: 30px;
+        border-bottom: 3px solid $orange;
+      }
+    }
+
+    .description-container {
+      display: none;
+      position: absolute;
+      top: 278px;
+      right: 0;
+      width: 400px;
+      font-size: 12px;
+      font-weight: 300;
+      background: $orange;
+      color: $white;
+      z-index: 100;
+
+      p {
+        padding: 30px;
+        color: $light-orange;
+      }
+
+      .characteristics-container {
+        height: 70px;
+        background: $dark-orange;
+
+        .icon {
+          display: inline-block;
+          width: 19%;
+          height: 100%;
+          padding-top: 10px;
+          text-align: center;
+          color: $light-orange;
+
+          img {
+            width: 50px;
+            height: 50px;
+          }
+        }
+      }
+    }
+
+    .services-container {
+      position: relative;
+      top: 312px;
+      color: $light-grey;
+      font-size: 120px;
+      font-weight: 900;
+      text-transform: uppercase;
+      z-index: -1;
+      line-height: .7;
+    }
+  }
+
+  .slider-nav {
+    display: none;
+    position: absolute;
+    right: 35px;
+    top: 0;
+
+    .left-arrow, .right-arrow {
+      position: absolute;
+      width: 25px;
+      height: 25px;
+
+      margin-top: 5px;
+      color: $orange;
+      font-size: 20px;
+      border: 3px solid $orange;
+      border-radius: 50%;
+      text-align: center;
+
+      z-index: 100;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      &.right-arrow {
+        top: 28px;
+      }
+
+      i {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 19px;
+        height: 22px;
+      }
+    }
+
+    .vertical-line {
+      position: absolute;
+      height: 150px;
+      top: 65px;
+      right: -14px;
+      border-right: 3px solid $grey;
+    }
+  }
+}
+
+@media screen and (min-width: $big-mobile) {
+  #hotels-slider-container {
+    width: 600px;
+    height: 600px;
+
+    .slider {
+      width: 600px;
+
+      .slide {
+        .slide-img {
+          width: 500px;
+          height: 500px;
+        }
+
+        .orange-border {
+          width: 550px;
+          height: 550px;
+        }
+      }
+
+      .hotels-header {
+        left: 505px;
+      }
+
+      .description-container {
+        display: block;
+      }
+
+      .services-container {
+        top: 512px;
+      }
+    }
+
+    .slider-nav {
+      display: block;
+
+      .vertical-line {
+        height: 50px;
+      }
+    }
+  }
+}
+
+
+@media screen and (min-width: $tablet) {
+
+  #hotels-slider-container {
+    position: relative;
+    width: 810px;
+    height: 600px;
+    margin: 80px auto;
+
+    .slider {
+      width: 800px;
+      margin: 0;
+
+      .slide {
+        position: relative;
+        .slide-img {
+          position: absolute;
+          width: 500px;
+          height: 500px;
+          background-position: center center;
+          background-size: cover;
+          overflow: hidden;
+          z-index: 100;
+
+          transition: opacity .8s linear;
+
+          .white-border {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 60px;
+            left: 60px;
+            border: 3px solid $white;
+          }
+        }
+
+        .orange-border {
+          position: absolute;
+          width: 550px;
+          height: 550px;
+          top: 60px;
+          left: 60px;
+          border: 3px solid $orange;
+          z-index: 0;
+        }
+      }
+
+      .slide-img-1 {
+        background-image: url('../images/hotels-slide-1.jpg');
+      }
+      .slide-img-2 {
+        background-image: url('../images/hotels-slide-2.jpg');
+      }
+      .slide-img-3 {
+        background-image: url('../images/hotels-slide-3.jpg');
+      }
+      .slide-img-4 {
+        background-image: url('../images/hotels-slide-4.jpg');
+      }
+      .slide-img-5 {
+        background-image: url('../images/hotels-slide-5.jpg');
+      }
+
+
+      .hotels-header {
+        position: absolute;
+        top: 150px;
+        left: 550px;
+        color: $black;
+        text-transform: uppercase;
+        font-weight: 700;
+
+        .small {
+          font-size: 16px;
+          font-weight: 300;
+        }
+
+        .orange-tick {
+          width: 30px;
+          border-bottom: 3px solid $orange;
+        }
+      }
+
+      .description-container {
+        position: absolute;
+        top: 278px;
+        right: 0;
+        width: 400px;
+        font-size: 12px;
+        font-weight: 300;
+        background: $orange;
+        color: $white;
+        z-index: 100;
+
+        p {
+          padding: 30px;
+          color: $light-orange;
+        }
+
+        .characteristics-container {
+          height: 70px;
+          background: $dark-orange;
+
+          .icon {
+            display: inline-block;
+            width: 19%;
+            height: 100%;
+            padding-top: 10px;
+            text-align: center;
+            color: $light-orange;
+
+            img {
+              width: 50px;
+              height: 50px;
+            }
+          }
+        }
+      }
+
+      .services-container {
+        position: relative;
+        top: 512px;
+        color: $light-grey;
+        font-size: 120px;
+        font-weight: 900;
+        text-transform: uppercase;
+        z-index: -1;
+        line-height: .7;
+      }
+    }
+
+    .slider-nav {
+      position: absolute;
+      right: 35px;
+      top: 0;
+
+      .left-arrow, .right-arrow {
+        position: absolute;
+        width: 25px;
+        height: 25px;
+
+        margin-top: 5px;
+        color: $orange;
+        font-size: 20px;
+        border: 3px solid $orange;
+        border-radius: 50%;
+        text-align: center;
+
+        z-index: 100;
+
+        &.right-arrow {
+          top: 28px;
+        }
+
+        i {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 19px;
+          height: 22px;
+        }
+      }
+
+      .vertical-line {
+        position: absolute;
+        height: 150px;
+        top: 65px;
+        right: -14px;
+        border-right: 3px solid $grey;
+      }
+    }
+  }
+}

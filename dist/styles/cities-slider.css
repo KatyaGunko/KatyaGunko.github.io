@@ -1,0 +1,118 @@
+#cities-slider-container {
+  position: relative;
+  width: 810px;
+  margin: auto;
+  overflow: hidden; }
+  #cities-slider-container .container-sub-header {
+    margin-top: 55px;
+    font-size: 23px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: #375F90; }
+  #cities-slider-container .sub-logo {
+    text-align: center; }
+    #cities-slider-container .sub-logo img {
+      height: 30px; }
+  #cities-slider-container .cities-slider {
+    position: relative;
+    margin-top: 20px;
+    overflow: hidden; }
+    #cities-slider-container .cities-slider .slider {
+      position: relative;
+      margin-left: -20px;
+      padding: 0;
+      height: 500px;
+      list-style: none; }
+      #cities-slider-container .cities-slider .slider .slide {
+        position: relative;
+        display: block;
+        float: left;
+        margin-left: 20px;
+        padding: 0;
+        width: 250px;
+        height: 400px;
+        text-align: center;
+        line-height: 300px;
+        background-size: cover;
+        background-position: center; }
+        #cities-slider-container .cities-slider .slider .slide .bg-div {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          background: transparent;
+          transition: background .3s linear; }
+          #cities-slider-container .cities-slider .slider .slide .bg-div .slide-header {
+            margin: 20px;
+            font-size: 17px;
+            font-weight: 700;
+            text-transform: uppercase;
+            text-align: left;
+            color: #ffffff; }
+          #cities-slider-container .cities-slider .slider .slide .bg-div .slide-sub-header {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            opacity: 0;
+            font-size: 13px;
+            text-align: left;
+            text-transform: uppercase;
+            color: #ffffff;
+            transition: opacity .3s linear; }
+        #cities-slider-container .cities-slider .slider .slide:hover {
+          cursor: pointer; }
+          #cities-slider-container .cities-slider .slider .slide:hover .bg-div {
+            background: rgba(0, 0, 0, 0.4); }
+            #cities-slider-container .cities-slider .slider .slide:hover .bg-div .slide-sub-header {
+              opacity: 1; }
+      #cities-slider-container .cities-slider .slider .slide-1 {
+        background-image: url("../images/cities-slide-1.jpg"); }
+      #cities-slider-container .cities-slider .slider .slide-2 {
+        background-image: url("../images/cities-slide-2.jpg"); }
+      #cities-slider-container .cities-slider .slider .slide-3 {
+        background-image: url("../images/cities-slide-3.jpg"); }
+      #cities-slider-container .cities-slider .slider .slide-4 {
+        background-image: url("../images/cities-slide-4.jpg"); }
+      #cities-slider-container .cities-slider .slider .slide-5 {
+        background-image: url("../images/cities-slide-5.jpg"); }
+      #cities-slider-container .cities-slider .slider .slide-6 {
+        background-image: url("../images/cities-slide-6.jpg"); }
+  #cities-slider-container .left-arrow, #cities-slider-container .right-arrow {
+    position: absolute;
+    width: 30px;
+    top: 62%;
+    transform: translate(0, -50%);
+    color: #ffffff;
+    font-size: 20px;
+    border: 1px solid #ffffff;
+    text-align: center;
+    z-index: 100; }
+    #cities-slider-container .left-arrow:hover, #cities-slider-container .right-arrow:hover {
+      cursor: pointer; }
+  #cities-slider-container .left-arrow {
+    left: 3%; }
+  #cities-slider-container .right-arrow {
+    right: 5%; }
+  #cities-slider-container .hot-deals {
+    position: relative;
+    top: -8px;
+    color: #F5F5F5;
+    font-size: 120px;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+    z-index: -1;
+    line-height: .7; }
+  #cities-slider-container .view-deals-section {
+    width: 150px;
+    margin: -35px auto 0;
+    color: #375F90;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 12px; }
+    #cities-slider-container .view-deals-section:hover {
+      cursor: pointer; }
+    #cities-slider-container .view-deals-section .orange-line {
+      width: 25px;
+      border-bottom: 3px solid #FE6306;
+      margin: 7px auto; }

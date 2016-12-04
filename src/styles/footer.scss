@@ -1,0 +1,33 @@
+$white: #ffffff;
+$grey: #cccccc;
+$dark-grey: #908c8c;
+$orange: #FE6306;
+$dark-blue: #375F90;
+$half-black: rgba(0, 0, 0, .4);
+$light-grey: #F5F5F5;
+
+footer {
+  width: 300px;
+  margin: auto;
+  color: $dark-grey;
+
+  li {
+    width: 148px;
+    display: inline-block;
+    list-style: none;
+    text-align: center;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+
+.footer-img {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin: -55px auto 0;
+  z-index: -1;
+}

@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/Raleway/Raleway-ExtraLight.ttf") format("ttf")
+}
+
+$white: #ffffff;
+$grey: #cccccc;
+$orange: #FE6306;
+$dark-blue: #375F90;
+$half-black: rgba(0, 0, 0, .4);
+$light-grey: #F5F5F5;
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Raleway;
+}
+
+body {
+  overflow-x: hidden;
+}
